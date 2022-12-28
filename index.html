@@ -24,12 +24,12 @@
       }
 
       .video-show {
-        scroll-behavior: smooth;
+        scroll-snap-type: y mandatory;
       }
 
-      /* .video-show div {
+      .video-show div {
         scroll-snap-align: start;
-      } */
+      }
 
       ::-webkit-scrollbar {
         display: none;
@@ -38,12 +38,12 @@
   </head>
   <body>
     <div
-      class="bg-video h-full relative w-full mx-auto grid md:grid-cols-1 md:justify-items-center"
+      class="bg-video relative w-full h-[100vh] mx-auto grid md:grid-cols-1 md:justify-items-center"
     >
-      <div class="video-show relative h-[85vh] lg:h-[91vh]  overflow-y-scroll flex flex-col">
+      <div class="video-show relative overflow-y-scroll flex flex-col ">
         <div class="flex flex-col relative h-full">
           <div
-            class="w-full h-[85vh] lg:h-[91vh]  bg-black opacity-70 absolute play z-20 flex justify-center items-center"
+            class="w-full h-full bg-black opacity-70 absolute play z-20 flex justify-center items-center"
             data-play="pause"
             data-target="vid1"
           >
@@ -51,8 +51,8 @@
           </div>
           <video
             id="vid1"
-            class="w-full h-[85vh] lg:h-[91vh]  md:w-[263.094px] xl:w-[500px]"
-            src="video_3.mp4"
+            class="w-full h-full"
+            src="/video-1.mp4"
             loop
           ></video>
           <div class="absolute top-0 left-0 w-full h-full py-2">
@@ -145,8 +145,8 @@
           </div>
           <video
             id="vid2"
-            class="w-full h-full md:w-[263.094px] xl:w-[500px]"
-            src="Dahyun '다현' - Twice - Facebook.mp4"
+            class="w-full h-full "
+            src="video-3.mp4"
             loop
           ></video>
           <div class="absolute top-0 left-0 w-full h-full py-2">
@@ -172,104 +172,9 @@
                   <div class="flex flex-col">
                     <div class="flex items-end">
                       <div class="profile-text z-50">
-                        <h6 class="text-white">dahyun</h6>
+                        <h6 class="text-white">mghtayhtuu7</h6>
                         <p class="text-white">
-                          MERRY CHRISTMAS!! 🎄💖 #twice #twice_tiktok_official
-                          #dahyun #dahyunedit #madeinrara #honeyshotgrp🍯
-                        </p>
-                      </div>
-                      <div class="action flex flex-col gap-y-3 z-30">
-                        <div
-                          class="profile-pic relative w-[40px] h-[40px] bg-slate-200 rounded-full flex justify-center"
-                        >
-                          <span
-                            class="text-white bg-red-700 rounded-full w-[20px] h-[20px] flex justify-center items-center self-end mb-[-10px]"
-                          >
-                            +
-                          </span>
-                        </div>
-                        <div class="love flex items-center flex-col">
-                          <i
-                            class="fa-solid fa-heart fa-2x text-white opacity-80"
-                          ></i>
-                          <p class="text-white opacity-80">95.3K</p>
-                        </div>
-                        <div class="comment flex items-center flex-col">
-                          <i
-                            class="fa-solid fa-comment-dots fa-2x text-white opacity-80"
-                          ></i>
-                          <p class="text-white opacity-80">2K</p>
-                        </div>
-                        <div class="save flex items-center flex-col">
-                          <i
-                            class="fa-solid fa-bookmark fa-2x text-white opacity-80"
-                          ></i>
-                          <p class="text-white opacity-80">12K</p>
-                        </div>
-                        <div class="save flex items-center flex-col">
-                          <i
-                            class="fa-solid fa-share fa-2x text-white opacity-80"
-                          ></i>
-                          <p class="text-white opacity-80">12K</p>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="music flex justify-between mt-3 z-50">
-                      <div class="music-title flex items-center gap-1">
-                        <i class="fa-solid fa-music text-white"></i>
-                        <p class="text-white">original song - dahyun</p>
-                      </div>
-                      <div
-                        class="dic w-[35px] h-[35px] bg-slate-200 rounded-full"
-                      ></div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="flex flex-col relative h-full">
-          <div
-            class="w-full h-[85vh] lg:h-[91vh]  bg-black opacity-70 absolute play z-20 flex justify-center items-center"
-            data-play="pause"
-            data-target="vid4"
-          >
-            <i class="fa-solid fa-play fa-2x text-white"></i>
-          </div>
-          <video
-            id="vid4"
-            class="w-full h-[85vh] lg:h-[91vh]  md:w-[263.094px] xl:w-[500px]"
-            src="video 2.mp4"
-            loop
-          ></video>
-          <div class="absolute top-0 left-0 w-full h-full py-2">
-            <div class="container mx-auto px-2 h-full">
-              <div class="flex flex-col h-full">
-                <nav class="flex justify-center z-50">
-                  <div class="flex gap-3 relative">
-                    <h6 class="font-bold text-white opacity-60">
-                      Following
-                    </h6>
-                    <h6 class="font-bold text-white">
-                      For You
-                      <div class="w-6 mx-auto h-[.125rem] bg-white"></div>
-                    </h6>
-                  </div>
-                  <div class="absolute right-0 mr-4">
-                    <i
-                      class="fa-solid fa-magnifying-glass text-lg text-white"
-                    ></i>
-                  </div>
-                </nav>
-                <div class="h-full flex items-end">
-                  <div class="flex flex-col">
-                    <div class="flex items-end">
-                      <div class="profile-text z-50">
-                        <h6 class="text-white">dailydotdev</h6>
-                        <p class="text-white">
-                          How developers sit... #fyp #developerjokes
-                          #programmingjoke #devjokes #programming
+                          These moments will last forever🥰 #manchesterunited #oldtrafford #🏟️ #cristianoronaldo #soccer #viral #foryou
                         </p>
                       </div>
                       <div class="action flex flex-col gap-y-3 z-30">
@@ -312,7 +217,102 @@
                       <div class="music-title flex items-center gap-1">
                         <i class="fa-solid fa-music text-white"></i>
                         <p class="text-white text-ellipsis w-full">
-                          original sound - daily.dev
+                          original sound - TAJUU 👹
+                        </p>
+                      </div>
+                      <div
+                        class="dic w-[35px] h-[35px] bg-slate-200 rounded-full"
+                      ></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="flex flex-col relative h-full">
+          <div
+            class="w-full h-full bg-black opacity-70 absolute play z-20 flex justify-center items-center"
+            data-play="pause"
+            data-target="vid3"
+          >
+            <i class="fa-solid fa-play fa-2x text-white"></i>
+          </div>
+          <video
+            id="vid3"
+            class="w-full h-full "
+            src="video-5.mp4"
+            loop
+          ></video>
+          <div class="absolute top-0 left-0 w-full h-full py-2">
+            <div class="container mx-auto px-2 h-full">
+              <div class="flex flex-col h-full">
+                <nav class="flex justify-center z-50">
+                  <div class="flex gap-3 relative">
+                    <h6 class="font-bold text-white opacity-60">
+                      Following
+                    </h6>
+                    <h6 class="font-bold text-white">
+                      For You
+                      <div class="w-6 mx-auto h-[.125rem] bg-white"></div>
+                    </h6>
+                  </div>
+                  <div class="absolute right-0 mr-4">
+                    <i
+                      class="fa-solid fa-magnifying-glass text-lg text-white"
+                    ></i>
+                  </div>
+                </nav>
+                <div class="h-full flex items-end">
+                  <div class="flex flex-col">
+                    <div class="flex items-end">
+                      <div class="profile-text z-50">
+                        <h6 class="text-white">heyeaslo</h6>
+                        <p class="text-white">
+                          Planning my 2023 goals in Notion. #notionnewyear #notionpartner #notionapp #notion #2023planner #2023goals #2023goalsetting
+                        </p>
+                      </div>
+                      <div class="action flex flex-col gap-y-3 z-30">
+                        <div
+                          class="profile-pic relative w-[40px] h-[40px] bg-slate-200 rounded-full flex justify-center"
+                        >
+                          <span
+                            class="text-white bg-red-700 rounded-full w-[20px] h-[20px] flex justify-center items-center self-end mb-[-10px]"
+                          >
+                            +
+                          </span>
+                        </div>
+                        <div class="love flex items-center flex-col">
+                          <i
+                            class="fa-solid fa-heart fa-2x text-white opacity-80"
+                          ></i>
+                          <p class="text-white opacity-80">95.3K</p>
+                        </div>
+                        <div class="comment flex items-center flex-col">
+                          <i
+                            class="fa-solid fa-comment-dots fa-2x text-white opacity-80"
+                          ></i>
+                          <p class="text-white opacity-80">2K</p>
+                        </div>
+                        <div class="save flex items-center flex-col">
+                          <i
+                            class="fa-solid fa-bookmark fa-2x text-white opacity-80"
+                          ></i>
+                          <p class="text-white opacity-80">12K</p>
+                        </div>
+                        <div class="save flex items-center flex-col">
+                          <i
+                            class="fa-solid fa-share fa-2x text-white opacity-80"
+                          ></i>
+                          <p class="text-white opacity-80">12K</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="music flex justify-between mt-3 z-50">
+                      <div class="music-title flex items-center gap-1">
+                        <i class="fa-solid fa-music text-white"></i>
+                        <p class="text-white text-ellipsis w-full">
+                          stream escapism - #1 the thrill 
                         </p>
                       </div>
                       <div
@@ -327,7 +327,7 @@
         </div>
       </div>
       <div
-        class="menu-bar w-full md:w-[263.094px] xl:w-[500px] h-[9vh] bg-slate-700 absolute bottom-0 flex justify-between md:justify-around items-end"
+        class="menu-bar py-2 w-full relative bg-slate-700 flex justify-between md:justify-around items-end"
       >
         <span
           id="seeker"
